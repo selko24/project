@@ -1,4 +1,4 @@
-Digg::Application.routes.draw do
+Project::Application.routes.draw do
   
  
   get "posts/create"

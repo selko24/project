@@ -81,3 +81,7 @@ Digg::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 end
+Yourapp::Application.routes.draw do
+  #Last route in routes.rb
+  match '*a', :to => 'errors#routing'
+end

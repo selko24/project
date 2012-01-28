@@ -1,0 +1,13 @@
+<h1>Zdravo</h1>
+<p>Poglej si nove strani!</p>
+
+<% if signed_in? %>
+
+<!-- prikaži formo za vnos postov -->
+<%= render 'shared/post_form'%>
+
+<% end %>
+
+<!-- Izpis vseh postov -->
+
+<%= render 'shared/all_posts'%>

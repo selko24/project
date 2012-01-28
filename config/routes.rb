@@ -81,13 +81,4 @@ Digg::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 end
-Yourapp::Application.routes.draw do
-  #Last route in routes.rb
-   match '/login', :to => 'sessions#new'
-  match '/logout', :to => 'sessions#destroy'
-  
-  match '/registration', :to => 'users#new'
-  match '/contact', :to => 'pages#contact'
-  match '/about', :to => 'pages#about' 
-  root :to => 'pages#home'
-end
+

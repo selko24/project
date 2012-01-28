@@ -4,10 +4,15 @@ gem 'rails', '3.2.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+source :gemcutter
+gem 'sinatra', '1.0'
+group :production do
+  gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
+  gem 'pg'
+end
 gem 'sqlite3'
 
-gem 'pg'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

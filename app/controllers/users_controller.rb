@@ -62,7 +62,7 @@ class UsersController < ApplicationController
   def correct_user
     @user = User.find(params[:id])
     unless correct_user?(@user)
-       flash[:error] = "To ni vasa stran,ne diraj!"
+       flash[:error] = "To ni vasa stran"
        redirect_to root_path
     end
   end

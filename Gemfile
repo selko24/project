@@ -8,7 +8,7 @@ source :gemcutter
 gem 'sinatra', '1.0'
 group :production do
   gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
-  gem 'pg'
+gem "pg", "~> 0.12.2"
 end
 gem 'sqlite3'
 

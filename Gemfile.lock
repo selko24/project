@@ -110,7 +110,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
-  pg
+  pg (~> 0.12.2)
   rails (= 3.2.1)
   sass-rails (~> 3.2.3)
   sinatra (= 1.0)

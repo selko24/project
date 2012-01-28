@@ -83,5 +83,11 @@ Digg::Application.routes.draw do
 end
 Yourapp::Application.routes.draw do
   #Last route in routes.rb
-  match '*a', :to => 'errors#routing'
+   match '/login', :to => 'sessions#new'
+  match '/logout', :to => 'sessions#destroy'
+  
+  match '/registration', :to => 'users#new'
+  match '/contact', :to => 'pages#contact'
+  match '/about', :to => 'pages#about' 
+  root :to => 'pages#home'
 end
